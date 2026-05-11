@@ -7,6 +7,9 @@ data/clean_xrays/
 # Saved models
 *.pkl
 
+# Pycharm settings
+.idea/
+
 # Jupyter checkpoints
 .ipynb_checkpoints/
 
