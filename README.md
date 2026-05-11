@@ -21,7 +21,7 @@ Between ResNet34, ResNet50, and DenseNet121, DenseNet121 with frozen pretrained 
 |---|---|---|---|---|
 | ResNet34 | 0.189 | 93.5% | 92.3% | 95.4% |
 | ResNet50 | 0.169 | 94.4% | 94.0% | 96.1% |
-| DenseNet121 (frozen only) | **0.163** | **96.3%** | **95.8%** | **97.4%** |
+| DenseNet121 (frozen only) | 0.163 | 96.3% | 95.8% | 97.4% |
 
 Final inference used test-time augmentation (TTA) at a 0.5 classification threshold. Threshold tuning from 0.2 to 0.5 showed the model produces highly confident predictions, making threshold choice less impactful than expected.
 
@@ -33,7 +33,6 @@ Final evaluation was run once on the held-out test set using the frozen DenseNet
 |---|---|---|---|---|
 | NORMAL | 0.97 | 0.93 | 0.95 | 147 |
 | PNEUMONIA | 0.97 | 0.99 | 0.98 | 392 |
-| **Overall (weighted)** | **0.97** | **0.97** | **0.97** | **539** |
 
 Test performance was consistent with validation performance, indicating the model generalizes well. Misclassification analysis found no systematic visual patterns in the errors, suggesting the remaining failures reflect ambiguity rather than a correctable model or augmentation issue.
 
