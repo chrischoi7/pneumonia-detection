@@ -6,6 +6,7 @@ data/clean_xrays/
 
 # Saved models
 *.pkl
+models/
 
 # Pycharm settings
 .idea/
